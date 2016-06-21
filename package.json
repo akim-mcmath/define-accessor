@@ -1,6 +1,6 @@
 {
   "name": "define-accessor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Define an ES2015 class getter/setter in ES5",
   "main": "lib/index.js",
   "scripts": {
