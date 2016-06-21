@@ -1,0 +1,6 @@
+/coverage/
+/lib/**/*.test.js
+/.editorconfig
+/.eslintrc.yml
+/.gitignore
+/.travis.yml

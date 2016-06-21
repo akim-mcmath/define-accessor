@@ -1,0 +1,44 @@
+{
+  "name": "define-accessor",
+  "version": "0.0.0",
+  "description": "Define an ES2015 class getter/setter in ES5",
+  "main": "lib/index.js",
+  "scripts": {
+    "test:lint": "eslint lib",
+    "test:unit": "istanbul cover _mocha -x '*.test.js' -- 'lib/**/*.test.js'",
+    "test:view": "npm run test && open coverage/lcov-report/index.html",
+    "test": "npm run test:lint && npm run test:unit",
+    "ci:coveralls": "cat coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akim-mcmath/define-accessor.git"
+  },
+  "keywords": [
+    "define",
+    "method",
+    "class",
+    "accessor",
+    "getter",
+    "setter",
+    "es5",
+    "es6",
+    "es2015"
+  ],
+  "engines": {
+    "node": ">=0.10"
+  },
+  "author": "Akim McMath <akim.elijah.mcmath@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akim-mcmath/define-accessor/issues"
+  },
+  "homepage": "https://github.com/akim-mcmath/define-accessor#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "eslint": "^2.13.1",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3"
+  }
+}

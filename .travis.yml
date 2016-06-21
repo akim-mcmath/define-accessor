@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "6"
+  - "4"
+  - "0.12"
+  - "0.10"
+after_success:
+  - npm run ci:coveralls
+deploy:
+  provider: npm
+  email:
+    secure: M/o9/bLKbz6mQrs5X+us7r1V373ZtADeBA9IRPAly8uJN8Km8AUxO9Z7qjrLrn9Yikyl2NHzOw+wIl3G/JJckmVgPyG2c5E2P2juoc8vcr9dkSRGmB6odsFMpU5ieOoJzDIf4Nr6Yb0WF0AHlBn837tEUq8eg19J7+beKRiAb1t7Buv9na0KyYd0LHaR3S6HjO+lYHh4pIycPerXXLHI0/50Ka9WR9bNn0Emz3APtIjl1lMick6huH7IgYAW5nZ6+Kd/wpz/mKcQJciz63sYuN1DpRkW3WjshG/bpl1ni2tEZA9H10Ki20nwR+3+lxfYrmjjIFN1shvgZdCtGB3B6g7EBM6ko2I8zmR+IFqH4eIwhWkBgVaQgJr84zxfPH3SU7cVLcQkyZnXJvGe4CkDkTQM0NA8VkQu4bKKoIvaxoaEFm0tYMphM5nKJaMscPQX8PAFd34+utGa3Ih4XWQUPldEwc+q9pwpEJ6wEVAZE4jUZcm2auHKBqij4N7WnHcdG55ULxZEaBtKw6+Xi9UV330z69IZkuiYU+XMoN18VjVsdL2g+8x9DxR8gyTuJExBsY5HNzgkCV1uxcb/J+A27alPgeeIo1iI66GzAoySHJceH6GDXH8R+mkbAQAOOvXottCCJHc9AIzj4yTh39NPGpdy0M1r9UK9LxSuLJJhB8A=
+  api_key:
+    secure: Ayx8Ylr4+1Y+6W9olaZvmx3RiHvJ+WhNC3U7EPLwMnClEU6IPiatQ+/k1yR6J88msGP+tZY5fAwWAR3g8fSq2dMIOqJFRbThCagyjSP3Obuft2GMej+ncyx+xZJLbw/ZheAi+qQ+KeYU+cWjukx5YKMhkR+tPXlzIdR5WoR+1LIP9vfPe8ITTXMItwOzijY+ZT02oBVjR1l26aE3QL4LUmBtxAnk/p8XhQQbE+YUi4cmpNoh+oeCImiKe/qlCRBx2qt2gXVMReBE3a78wlvc9s7Kx9geI/tvQ0RKqOgzeRvnlw8AP3lT6Nh7Ie9cBb8jLt+YfTfi5WTFS5jRPplOVMvyE9gnHJe7pm24xjBMHmyy0FLvG2rZpQgx31TSUhGEK+TTan/DLfQ/e6xTMSahxaYj1SEmm1exHoyaeyToLA1pAuC3N5rokHwwZR7eBNvF8I41mHUgEG14lOmKyX/HS/bZqf9Jjq2c1AYlLppHG/Kkin8om5AUCUS8R16IXo2doa/UnpTcJPIuHmhCpAeFhHpwa042bEB46Y+jyhpjcptbfVO6627fiEy7CJAHMYISVp08Znp1BRKXslOsFGcicfvfv6I++pkEDk8Xe1eCqI+wskUSSXP11iQGoQAeGVLR0OuGbWc96Aak0jSntSKcT9hVvPEdX8guSybzr5BjoyI=
+  skip_cleanup: true
+  on:
+    repo: akim-mcmath/define-accessor
+    node: "4"
+    tags: true
